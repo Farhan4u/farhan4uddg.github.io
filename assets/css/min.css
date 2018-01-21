@@ -1,0 +1,252 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+body, html{
+  min-height:100%;
+}
+
+.main_header{
+  width:100%;
+  margin:0 auto;
+  max-height:100px;
+  overflow:hidden;
+  background-color:#111;
+  position:relative;
+}
+
+#inner{
+  width:1024px;
+  margin:0 auto;
+  overflow:hidden;
+}
+
+.left_side_logo{
+  width:20%;
+  float:left;
+  max-height:100px;
+}
+
+.left_side_logo #logo{
+  width:80px;
+  display:block;
+}
+
+.right_side_navigation{
+  width:80%;
+  float:right;
+}
+
+.right_side_navigation #navigation{
+  list-style-type:none;
+}
+
+.right_side_navigation #navigation{
+  margin-top:25px;
+  max-height:100px;
+  overflow:hidden;
+}
+
+.right_side_navigation #navigation li a{
+  display:inline-block;
+  float:left;
+  margin-right:15px;
+  width:100px;
+  text-align:center;
+  height:50px;
+  line-height:50px;
+  font-family:sans-serif;
+  letter-spacing:3px;
+  text-transform:uppercase;
+  color:#fff;
+  text-decoration:none;
+  font-size:12px;
+  font-weight:700;
+  -webkit-transition:all .25s ease;
+  -moz-transition:all .25s ease;
+  -ms-transition:all .25s ease;
+  -o-transition:all .25s ease;
+  transition:all .25s ease;
+}
+
+.right_side_navigation #navigation li a:hover{
+  border-bottom:2px solid #fff;
+}
+
+.main_header .toggleBtn{
+  position:absolute;
+  right:20px;
+  top:25px;
+  overflow:hidden;
+  visibility:hidden;
+}
+
+.toggleBtn #toggle{
+  font-size:25px;
+  width:50px;
+  display:block;
+  height:50px;
+  line-height:50px;
+  text-align:center;
+  border:1px solid #fff;
+  color:#fff;
+  cursor:pointer;
+  -webkit-transition:all .25s ease;
+  -moz-transition:all .25s ease;
+  -ms-transition:all .25s ease;
+  -o-transition:all .25s ease;
+  transition:all .25s ease;
+}
+
+.toggleBtn #toggle:hover{
+  background-color:#fff;
+  border-radius:100%;
+  color:#333;
+}
+
+#active{
+  border-bottom:2px solid #fff;
+}
+
+#bottom_area{
+  overflow:hidden;
+  position:absolute;
+  bottom:20px;
+  right:0;
+  left:0;
+}
+
+#toggle_navigation{
+  position:fixed;
+  top:0;
+  width:100%;
+  right:100%;
+  background-color:#111;
+  min-height:100%;
+  -webkit-transition:all .25s ease;
+  -moz-transition:all .25s ease;
+  -ms-transition:all .25s ease;
+  -o-transition:all .25s ease;
+  transition:all .25s ease;
+}
+
+#close{
+  color:#fff;
+  text-align:center;
+  display:block;
+  position:absolute;
+  font-size:18px;
+  border:1px solid #fff;
+  width:30px;
+  height:30px;
+  line-height:30px;
+  right:20px;
+  top:8px;
+  cursor:pointer;
+  -webkit-transition:all .25s ease;
+  -moz-transition:all .25s ease;
+  -ms-transition:all .25s ease;
+  -o-transition:all .25s ease;
+  transition:all .25s ease;
+}
+
+#close:hover{
+  background-color:#fff;
+  color:#333;
+}
+
+#toggle_navigation #navigation{
+  list-style-type:none;
+}
+
+#toggle_navigation #navigation li a{
+  display:inline-block;
+  margin-right:15px;
+  width:100%;
+  text-align:center;
+  height:50px;
+  line-height:50px;
+  font-family:sans-serif;
+  letter-spacing:3px;
+  text-transform:uppercase;
+  color:#fff;
+  text-decoration:none;
+  font-size:12px;
+  font-weight:700;
+  -webkit-transition:all .25s ease;
+  -moz-transition:all .25s ease;
+  -ms-transition:all .25s ease;
+  -o-transition:all .25s ease;
+  transition:all .25s ease;
+}
+
+#toggle_navigation #navigation li a:hover{
+  border-bottom:2px solid #fff;
+}
+
+#side_logo img{
+  width:80px;
+  display:block;
+  margin:0 auto;
+}
+
+#side_logo #tag_line{
+  color:#fff;
+  font-size:15px;
+  text-transform:uppercase;
+  letter-spacing:2px;
+  text-align:center;
+  font-family:sans-serif;
+}
+
+#social_links_section{
+  overflow:hidden;
+  width:280px;
+  margin:0 auto;
+  padding-top:25px;
+}
+
+#social_links_section #social_links{
+  list-style-type:none;
+}
+
+#social_links li a{
+  width:35px;
+  height:35px;
+  line-height:35px;
+  font-size:16px;
+  border:1px solid #fff;
+  color:#fff;
+  float:left;
+  text-align:center;
+  margin-left:28px;
+  -webkit-transition:all .1s  ease-in-out;
+  -moz-transition:all .1s  ease-in-out;
+  -ms-transition:all .1s  ease-in-out;
+  -o-transition:all .1s  ease-in-out;
+  transition:all .1s  ease-in-out;
+}
+
+#social_links a:hover{
+  font-size:20px;
+  border:1px solid #6d6d6d;
+}
+
+#text{
+  width:500px;
+}
+
+@media screen and (max-width: 992px) {
+  .main_header .toggleBtn{
+    visibility:visible;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .right_side_navigation{
+    visibility:hidden;
+  }
+}
+
